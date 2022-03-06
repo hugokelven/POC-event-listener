@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>POC Event Listener</title>
+
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="conteudo-centralizado">Prova de Conceito</header>
+    
+    <main>
+        <div class="exemplo1">
+            <h1>Manipulando Eventos e Função de Callback</h1>
+        
+            <button class="botao1-ex1">click</button>
+            <button class="botao2-ex1">mouseover</button>
+            <button class="botao3-ex1">mouseout</button>
+        </div>
+
+        <div class="exemplo2 escondido">
+            <h1>Elemento com Múltiplos Eventos e Objeto Event</h1>
+        
+            <button class="botao-ex2">Multiplos Eventos</button>
+        </div>
+
+        <div class="exemplo3a escondido">
+            <h1>Event Bubbling e Event Capturing</h1>
+        
+            <div class="mais-externo conteudo-centralizado">
+                <div class="mais-interno conteudo-centralizado">click aqui</div>
+            </div>
+        </div>
+
+        <div class="exemplo3b escondido">
+            <h1>Interrompendo a Propagação de Eventos</h1>
+        
+            <div class="mais-externo3b conteudo-centralizado">
+                <div class="no-meio conteudo-centralizado">
+                    <div class="mais-interno3b conteudo-centralizado">click aqui</div>
+                </div>
+            </div>
+            <div>Vermelho :<input type="checkbox" id="vermelho"></div>
+            <div>Verde: <input type="checkbox" id="verde"></div>
+            <div>Preto: <input type="checkbox" id="preto"></div>
+        </div>
+    
+        <aside><!-- CARREGADO NO JS --></aside>
+
+        <button class="clear">clear</button>
+    </main>
+
+    <footer class="conteudo-centralizado">
+        <button class="selecionado" onclick="habilitarEx1(this)">Exemplo 1</button>
+        <button onclick="habilitarEx2(this)">Exemplo 2</button>
+        <button onclick="habilitarEx3a(this)">Exemplo 3a</button>
+        <button onclick="habilitarEx3b(this)">Exemplo 3b</button>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
